@@ -21,10 +21,3 @@ LottieInteractivity.create({
         frames: [0, 90],
     }, ]
 });
-var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    }
-});
