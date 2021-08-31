@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Playfair+Display:wght@500&display=swap&family=Chonburi&display=swap');
+body {
+    width: 100vw;
+    margin: 0% !important;
+    height: 100%;
+    background-color: #181818 !important;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#section1 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    z-index: -999;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section2 {
+    background-color: #00ff47;
+    position: relative;
+    height: 100vh;
+    z-index: -1000;
+    margin-top: 0px;
+}
+
+.logo {
+    z-index: 5;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+@keyframes logorotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes logorotate2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 6em;
+    animation-name: logorotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-text-stroke: 0.5px white;
+    color: white;
+    filter: drop-shadow(5px 5px 0px #00ff47);
+    font-family: 'Kaisei Decol', serif;
+    mix-blend-mode: difference;
+}
+
+.portfolio {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    font-size: 10em;
+    animation-name: logorotate2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+    filter: drop-shadow(5px 5px 0px #00ff47);
+    z-index: 1;
+    font-family: 'Kaisei Decol', serif;
+    mix-blend-mode: difference;
+}
+
+.imageaftertext {
+    z-index: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: relative;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #3E5151);
+}
+
+.imageaftertext2 {
+    z-index: 0;
+    top: 5%;
+    right: 0%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext2:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #E5BF75);
+}
+
+.imageaftertext3 {
+    z-index: 0;
+    top: 45%;
+    left: 25%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext3:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #3A1916);
+}
+
+.imageaftertext4 {
+    z-index: 0;
+    top: 12%;
+    left: 42%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext4:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #584525);
+}
+
+.imageaftertext5 {
+    z-index: 0;
+    top: 40%;
+    left: 65%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext5:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #B66655);
+}
+
+.custom-shape-divider-bottom-1630418062 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630418062 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    z-index: -7;
+}
+
+.custom-shape-divider-bottom-1630418062 .shape-fill {
+    fill: #00ff47;
+}
+
+.head h1 {
+    color: white;
+    font-family: 'Kaisei Decol', serif;
+    letter-spacing: 20px;
+    font-size: 5em;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-lazy-loaded {
+    object-fit: cover !important;
+    width: 100% !important;
+    max-width: none !important;
+}
